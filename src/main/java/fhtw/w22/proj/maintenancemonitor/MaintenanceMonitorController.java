@@ -54,8 +54,8 @@ public class MaintenanceMonitorController {
         // as we have no data bank, the message data and the update time data is saved in separate files.
         FileWriter fw = new FileWriter ("api_stored.text");
         FileWriter fw_date = new FileWriter("api_update.text");
-
-        fw.write(m);
+        String savedMsg = m.replace("+", " ");
+        fw.write(savedMsg);
         fw_date.write ("last update: " + updatedTime);
 
         fw.close();
