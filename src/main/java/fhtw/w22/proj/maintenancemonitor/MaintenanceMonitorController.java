@@ -63,7 +63,7 @@ public class MaintenanceMonitorController {
 
       } catch (IOException e){
         e.printStackTrace();
-        return "redMaintenanceMonitor";
+        return "redMaintenanceMonitor";//?
       }
 
     } else {
