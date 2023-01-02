@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Maintenance Monitor</title>
+  <style>
+    body {
+      background-color: lightgreen;
+    }
+    .text {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="text">Maintenance Monitor</h1>
+  <p class= "text" th:text = "${outputText}"/>
+  <p class = "text" th:text = "${updateTime}"/>
+</body>
+</html>
