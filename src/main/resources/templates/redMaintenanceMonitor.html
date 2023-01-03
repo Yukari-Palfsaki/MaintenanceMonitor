@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="https://thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Maintenance Monitor</title>
     <style>
-    body {
-    background-color: darksalmon;
-    }
-    .text {
-    text-align: center;
-    }
-  </style>
+        body {
+            background-color: darksalmon;
+        }
+        .text {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-      <h1 class="text">Maintenance Monitor</h1>
-      <h3 class="text">problem with Web-Server Maintenance until 06:00 UTC</h3>
-      <br>
-      <p class = "text" th:text = "${updateTime}"/>
+<h1 class="text">Maintenance Monitor</h1>
+<p class= "text" th:text = "${outputText}"/>
+<p class = "text" th:text = "${updateTime}"/>
 </body>
 </html>
