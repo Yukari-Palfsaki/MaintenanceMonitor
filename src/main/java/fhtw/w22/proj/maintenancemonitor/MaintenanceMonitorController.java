@@ -23,7 +23,7 @@ public class MaintenanceMonitorController {
    * If the saved message contains "problem with Web-Server Maintenance", this function returns the red maintenance screen.
    * Last update will be shown also through showUpdateTime(Model model)
    */
-  @GetMapping("/api/message")//TODO
+  @GetMapping("/api/message")
   String setMsg (Model model) throws FileNotFoundException {
     File f = new File ("api_stored.text");
     String showString = "Everything works as expected";
