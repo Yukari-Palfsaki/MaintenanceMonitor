@@ -23,10 +23,10 @@ public class MaintenanceMonitorController {
    * If the saved message contains "problem with Web-Server Maintenance", this function returns the red maintenance screen.
    * Last update will be shown also through showUpdateTime(Model model)
    */
-  @GetMapping("/api/message")
+  @GetMapping("/api/message")//TODO
   String setMsg (Model model) throws FileNotFoundException {
     File f = new File ("api_stored.text");
-    String showString = null;
+    String showString = "Everything works as expected";
     if(f.exists()){
       Scanner sc = new Scanner(f);
       if(!sc.hasNextLine()) {
@@ -42,15 +42,14 @@ public class MaintenanceMonitorController {
         showUpdateTime(model);
       }
     }
-    else {
-      model.addAttribute("outputText", "Everything works as expected");
+    else  {
+      model.addAttribute("outputText", showString);
       showUpdateTime(model);
     }
     if (showString.contains("problem with Web-Server Maintenance")){
       return "redMaintenanceMonitor";
-    } else {
-      return "greenMaintenanceMonitor";
     }
+      return "greenMaintenanceMonitor";
   }
 
   /**
