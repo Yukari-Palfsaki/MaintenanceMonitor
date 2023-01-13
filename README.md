@@ -4,7 +4,7 @@ Abschlussprojekt von SLM W22
 Projektteilnehmer:
 
 Ilic Sanja – ic21b110 (Github: saneey03)
-Salkic Nermina – ic21b114 (Github: Norm01)
+Salkic Nermina – ic21b114 (Github: Norm01, nsanes)
 Susaki Yukari – ic21b053 (Github: Yukari-Palfsaki)
 
 Aufgabe:
